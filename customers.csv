@@ -1,4 +1,51 @@
-customer_id,email,phone,full_name,address,order_number,rma_number,member_id
-812,jane.doe@example.com,+14155551234,Jane Doe,123 Maple Street,123456,RMA7890,M1023
-921,john.smith@example.com,+14156667788,John Smith,456 Oak Avenue,654321,RMA4321,M2045
-1033,emily.chan@example.com,+442079460123,Emily Chan,789 Birch Road,789123,RMA1001,M3099
+customer_id,member_id,full_name,email,phone,address,rma_number,order_number
+1000,M-91684,Jane Johnson,jane.johnson87@service.net,+17219090699,457 Hill St, London,RMA1049,223487
+1001,M-78087,Alex Johnson,alex.johnson13@domain.com,+13620102667,205 Hill St, Springfield,RMA1056,251374
+1002,M-39617,Emily Taylor,emily.taylor28@domain.com,+14002921329,832 Maple Ave, Gotham,RMA1033,948327
+1003,M-24570,Chris Smith,chris.smith39@testmail.com,+12267269890,861 5th Ave, Metropolis,RMA1063,794312
+1004,M-17929,Emily Taylor,emily.taylor48@company.org,+15218179250,773 Maple Ave, Metropolis,RMA1014,796814
+1005,M-73798,Jane Brown,jane.brown35@company.org,+16122894021,499 Oak Rd, Metropolis,RMA1019,262144
+1006,M-61759,Chris Smith,chris.smith66@service.net,+17598001265,921 Maple Ave, Metropolis,RMA1007,398758
+1007,M-91254,Alex Smith,alex.smith90@company.org,+15264126048,890 Main St, Metropolis,RMA1044,278342
+1008,M-44151,Emily Smith,emily.smith40@testmail.com,+15011825774,494 Hill St, London,RMA1024,891202
+1009,M-81282,Emily Smith,emily.smith51@company.org,+15554373709,132 Main St, Gotham,RMA1026,646113
+1010,M-71892,Theinf38rkmc,jane32@not_an_email,1234,267 Maple Ave, London,RMA1035,689728
+1011,M-26483,Emily Smith,shared.email@testmail.com,+19998887777,390 5th Ave, Springfield,RMA1001,312738
+1012,M-90571,Jane Johnson,jane.johnson17@company.org,+17011289243,829 Oak Rd, London,RMA1022,116331
+1013,M-36867,Jane Taylor,jane.taylor44@testmail.com,+12739551736,880 Oak Rd, Gotham,RMA1024,974812
+1014,M-31716,Emily Johnson,emily.johnson77@testmail.com,+15223435855,728 Hill St, London,RMA1039,325074
+1015,M-62714,Chris Brown,chris.brown57@company.org,+18077665346,969 Maple Ave, Gotham,RMA1005,897321
+1016,M-41260,Emily Johnson,emily.johnson37@testmail.com,+15814502388,122 Maple Ave, Springfield,RMA1071,230596
+1017,M-63676,Emily Johnson,emily.johnson84@domain.com,+17754883731,934 Maple Ave, Gotham,RMA1054,519309
+1018,M-22584,Jane Smith,jane.smith84@domain.com,+16389367039,695 5th Ave, Metropolis,RMA1037,352054
+1019,M-31999,Emily Brown,emily.brown97@testmail.com,+12740246553,240 Hill St, Gotham,RMA1054,186933
+1020,M-22026,Alex Johnson,alex.johnson65@testmail.com,+14559586783,323 Hill St, London,RMA1085,933405
+1021,M-36755,Jane Brown,jane.brown91@testmail.com,+1234,740 Hill St, Springfield,RMA1022,412567
+1022,M-37835,Theinf38rkmc,johnny88@not_an_email,abcd,853 5th Ave, Gotham,RMA1073,194587
+1023,M-32753,Emily Smith,shared.email@testmail.com,+19998887777,390 5th Ave, Springfield,RMA1074,288701
+1024,M-72452,Alex Taylor,alex.taylor95@testmail.com,+13487413827,274 5th Ave, Gotham,RMA1016,378431
+1025,M-80062,Chris Smith,chris.smith30@domain.com,+15980014689,137 5th Ave, Springfield,RMA1001,730210
+1026,M-46286,Chris Brown,chris.brown33@testmail.com,+14405458273,293 5th Ave, London,RMA1099,249750
+1027,M-90257,Chris Brown,chris.brown44@testmail.com,+19641721182,682 Hill St, London,RMA1057,737420
+1028,M-88358,Jane Johnson,jane.johnson15@testmail.com,+19816016377,738 Oak Rd, Metropolis,RMA1063,676960
+1029,M-77441,Chris Taylor,chris.taylor87@testmail.com,+18083215448,582 5th Ave, Springfield,RMA1003,275721
+1030,M-25356,Emily Brown,emily.brown48@company.org,+19071792359,740 Main St, Gotham,RMA1052,897256
+1031,M-30670,Chris Johnson,chris.johnson69@company.org,+18576074399,329 Oak Rd, Springfield,RMA1091,865932
+1032,M-38017,Chris Johnson,chris.johnson84@testmail.com,+1234,910 Main St, London,RMA1022,256048
+1033,M-20329,Theinf38rkmc,spam@fake.email,none,222 5th Ave, Springfield,RMA1047,884013
+1034,M-86509,Jane Taylor,jane.taylor11@testmail.com,+16764436208,116 Oak Rd, Gotham,RMA1092,107024
+1035,M-22736,Jane Johnson,shared.email@testmail.com,+19998887777,390 5th Ave, Springfield,RMA1018,634912
+1036,M-15783,Jane Taylor,jane.taylor41@testmail.com,+14531954471,940 Maple Ave, London,RMA1093,457303
+1037,M-88845,Emily Johnson,emily.johnson15@company.org,+12668093396,141 Maple Ave, Gotham,RMA1076,292031
+1038,M-65800,Emily Brown,emily.brown85@service.net,+13882072832,891 Oak Rd, Gotham,RMA1072,777639
+1039,M-37158,Alex Taylor,alex.taylor66@domain.com,+19762240644,494 5th Ave, Springfield,RMA1074,627052
+1040,M-94761,Emily Smith,emily.smith12@company.org,+17232801583,657 Oak Rd, London,RMA1045,670509
+1041,M-13076,Jane Brown,jane.brown14@company.org,+18676771628,655 Maple Ave, London,RMA1017,412307
+1042,M-34996,Jane Smith,jane.smith11@domain.com,+18202594025,936 5th Ave, Springfield,RMA1041,812487
+1043,M-67915,Alex Smith,alex.smith98@testmail.com,+14444731940,179 Main St, Gotham,RMA1089,898412
+1044,M-99331,Chris Smith,chris.smith71@testmail.com,+16238091270,430 Oak Rd, Gotham,RMA1082,195024
+1045,M-75833,Emily Brown,emily.brown59@service.net,+14808800386,986 Oak Rd, Springfield,RMA1011,703998
+1046,M-31980,Jane Johnson,jane.johnson25@testmail.com,+12008653664,308 Oak Rd, Gotham,RMA1027,340528
+1047,M-48733,Alex Brown,alex.brown39@domain.com,+19414734925,701 Maple Ave, London,RMA1046,905818
+1048,M-34197,Chris Smith,chris.smith93@domain.com,+17680105978,710 Hill St, Gotham,RMA1059,653178
+1049,M-66988,Emily Smith,emily.smith38@service.net,+17373102179,397 Maple Ave, Metropolis,RMA1086,489078
