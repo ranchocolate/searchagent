@@ -1,0 +1,4 @@
+customer_id,email,phone,full_name,address,order_number,rma_number,member_id
+812,jane.doe@example.com,+14155551234,Jane Doe,123 Maple Street,123456,RMA7890,M1023
+921,john.smith@example.com,+14156667788,John Smith,456 Oak Avenue,654321,RMA4321,M2045
+1033,emily.chan@example.com,+442079460123,Emily Chan,789 Birch Road,789123,RMA1001,M3099
