@@ -162,7 +162,11 @@ threshold = st.slider(
 )
 
 fields = list(customers_df.columns)
-fields_to_match = st.multiselect("Select fields to match against (leave empty for all fields)", fields, default=fields)
+fields_to_match = st.multiselect(
+    "Select fields to match against (leave empty for all fields)",
+    fields,
+    default=["full_name", "email", "phone", "address", "customer_id", "member_id", "rma_number", "order_number"]
+)
 
 if query:
     results = search_customers(
