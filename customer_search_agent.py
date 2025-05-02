@@ -20,38 +20,37 @@ def is_valid_phone(phone):
 
 st.title("🔎 AI Customer Search & Fraud Detection")
 
-st.subheader("🔧 Address Blacklist & Synonyms Configuration")
+with st.sidebar.expander("🔧 Address Blacklist & Synonyms Configuration", expanded=False):
+    # User-editable address blacklist
+    address_blacklist_input = st.text_area(
+        "Blacklisted Addresses (one per line):",
+        value="\n".join([
+            "123 fake street",
+            "456 fraud strasse"
+        ])
+    )
+    ADDRESS_BLACKLIST = [addr.strip().lower() for addr in address_blacklist_input.strip().splitlines() if addr.strip()]
 
-# User-editable address blacklist
-address_blacklist_input = st.text_area(
-    "Blacklisted Addresses (one per line):",
-    value="\n".join([
-        "123 fake street",
-        "456 fraud strasse"
-    ])
-)
-ADDRESS_BLACKLIST = [addr.strip().lower() for addr in address_blacklist_input.strip().splitlines() if addr.strip()]
-
-# User-editable address synonyms
-synonyms_input = st.text_area(
-    "Address Synonyms (format: variant=replacement, one per line):",
-    value="\n".join([
-        "street=st",
-        "st.=st",
-        "strasse=str",
-        "str.=str",
-        "avenue=ave",
-        "road=rd",
-        "rd.=rd",
-        "drive=dr",
-        "boulevard=blvd"
-    ])
-)
-ADDRESS_SYNONYMS = {}
-for line in synonyms_input.strip().splitlines():
-    if "=" in line:
-        variant, replacement = line.strip().split("=", 1)
-        ADDRESS_SYNONYMS[variant.strip().lower()] = replacement.strip().lower()
+    # User-editable address synonyms
+    synonyms_input = st.text_area(
+        "Address Synonyms (format: variant=replacement, one per line):",
+        value="\n".join([
+            "street=st",
+            "st.=st",
+            "strasse=str",
+            "str.=str",
+            "avenue=ave",
+            "road=rd",
+            "rd.=rd",
+            "drive=dr",
+            "boulevard=blvd"
+        ])
+    )
+    ADDRESS_SYNONYMS = {}
+    for line in synonyms_input.strip().splitlines():
+        if "=" in line:
+            variant, replacement = line.strip().split("=", 1)
+            ADDRESS_SYNONYMS[variant.strip().lower()] = replacement.strip().lower()
 
 # Validation and anomaly detection
 def find_invalid_entries(customers_df):
