@@ -7,28 +7,6 @@ from rapidfuzz import fuzz
 @st.cache_data
 def load_customers(file_path):
     return pd.read_csv(file_path)
-    
-# User-editable blacklist and synonyms
-st.sidebar.header("🛡️ Address Fraud Settings")
-
-raw_blacklist = st.sidebar.text_area(
-    "Blacklisted Addresses (one per line)",
-    "\n".join(ADDRESS_BLACKLIST)
-)
-
-raw_synonyms = st.sidebar.text_area(
-    "Address Synonyms (long:short, one per line)",
-    "\n".join(f"{k}:{v}" for k, v in ADDRESS_SYNONYMS.items())
-)
-
-# Parse user inputs
-ADDRESS_BLACKLIST = [line.strip().lower() for line in raw_blacklist.split("\n") if line.strip()]
-ADDRESS_SYNONYMS = {}
-
-for line in raw_synonyms.split("\n"):
-    if ":" in line:
-        long, short = line.strip().lower().split(":", 1)
-        ADDRESS_SYNONYMS[long.strip()] = short.strip()
 
 # Validate individual fields
 def is_valid_name(name):
@@ -40,31 +18,39 @@ def is_valid_email(email):
 def is_valid_phone(phone):
     return bool(re.fullmatch(r"\+?\d{8,15}", phone))
 
-# Address normalization and blacklist
-ADDRESS_BLACKLIST = [
-    "123 fake street",
-    "456 fraud strasse"
-]
+st.subheader("🔧 Address Blacklist & Synonyms Configuration")
 
-ADDRESS_SYNONYMS = {
-    "street": "st",
-    "st.": "st",
-    "strasse": "str",
-    "str.": "str",
-    "avenue": "ave",
-    "road": "rd",
-    "rd.": "rd",
-    "drive": "dr",
-    "boulevard": "blvd"
-}
+# User-editable address blacklist
+address_blacklist_input = st.text_area(
+    "Blacklisted Addresses (one per line):",
+    value="\n".join([
+        "123 fake street",
+        "456 fraud strasse"
+    ])
+)
+ADDRESS_BLACKLIST = [addr.strip().lower() for addr in address_blacklist_input.strip().splitlines() if addr.strip()]
 
-def normalize_address(addr):
-    if not isinstance(addr, str):
-        return ""
-    addr = addr.lower()
-    for long, short in ADDRESS_SYNONYMS.items():
-        addr = re.sub(rf"\\b{long}\\b", short, addr)
-    return addr.strip()
+# User-editable address synonyms
+synonyms_input = st.text_area(
+    "Address Synonyms (format: variant=replacement, one per line):",
+    value="\n".join([
+        "street=st",
+        "st.=st",
+        "strasse=str",
+        "str.=str",
+        "avenue=ave",
+        "road=rd",
+        "rd.=rd",
+        "drive=dr",
+        "boulevard=blvd"
+    ])
+)
+ADDRESS_SYNONYMS = {}
+for line in synonyms_input.strip().splitlines():
+    if "=" in line:
+        variant, replacement = line.strip().split("=", 1)
+        ADDRESS_SYNONYMS[variant.strip().lower()] = replacement.strip().lower()
+
 
 # Validation and anomaly detection
 def find_invalid_entries(customers_df):
