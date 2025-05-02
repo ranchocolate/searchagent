@@ -7,6 +7,28 @@ from rapidfuzz import fuzz
 @st.cache_data
 def load_customers(file_path):
     return pd.read_csv(file_path)
+    
+# User-editable blacklist and synonyms
+st.sidebar.header("🛡️ Address Fraud Settings")
+
+raw_blacklist = st.sidebar.text_area(
+    "Blacklisted Addresses (one per line)",
+    "\n".join(ADDRESS_BLACKLIST)
+)
+
+raw_synonyms = st.sidebar.text_area(
+    "Address Synonyms (long:short, one per line)",
+    "\n".join(f"{k}:{v}" for k, v in ADDRESS_SYNONYMS.items())
+)
+
+# Parse user inputs
+ADDRESS_BLACKLIST = [line.strip().lower() for line in raw_blacklist.split("\n") if line.strip()]
+ADDRESS_SYNONYMS = {}
+
+for line in raw_synonyms.split("\n"):
+    if ":" in line:
+        long, short = line.strip().lower().split(":", 1)
+        ADDRESS_SYNONYMS[long.strip()] = short.strip()
 
 # Validate individual fields
 def is_valid_name(name):
@@ -17,6 +39,32 @@ def is_valid_email(email):
 
 def is_valid_phone(phone):
     return bool(re.fullmatch(r"\+?\d{8,15}", phone))
+
+# Address normalization and blacklist
+ADDRESS_BLACKLIST = [
+    "123 fake street",
+    "456 fraud strasse"
+]
+
+ADDRESS_SYNONYMS = {
+    "street": "st",
+    "st.": "st",
+    "strasse": "str",
+    "str.": "str",
+    "avenue": "ave",
+    "road": "rd",
+    "rd.": "rd",
+    "drive": "dr",
+    "boulevard": "blvd"
+}
+
+def normalize_address(addr):
+    if not isinstance(addr, str):
+        return ""
+    addr = addr.lower()
+    for long, short in ADDRESS_SYNONYMS.items():
+        addr = re.sub(rf"\\b{long}\\b", short, addr)
+    return addr.strip()
 
 # Validation and anomaly detection
 def find_invalid_entries(customers_df):
@@ -59,6 +107,15 @@ def scan_for_fraud(customers_df):
                 if idx not in fraud_flags:
                     fraud_flags[idx] = []
                 fraud_flags[idx].append(f"⚠️ {label}: {value}")
+
+    # Check for blacklisted address variants
+    blacklisted_norm = [normalize_address(a) for a in ADDRESS_BLACKLIST]
+    for idx, row in customers_df.iterrows():
+        norm_addr = normalize_address(row.get("address", ""))
+        if norm_addr in blacklisted_norm:
+            if idx not in fraud_flags:
+                fraud_flags[idx] = []
+            fraud_flags[idx].append("🚫 Blacklisted address variant")
 
     return fraud_flags
 
