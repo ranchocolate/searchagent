@@ -18,6 +18,8 @@ def is_valid_email(email):
 def is_valid_phone(phone):
     return bool(re.fullmatch(r"\+?\d{8,15}", phone))
 
+st.title("🔎 AI Customer Search & Fraud Detection")
+
 st.subheader("🔧 Address Blacklist & Synonyms Configuration")
 
 # User-editable address blacklist
@@ -51,7 +53,6 @@ for line in synonyms_input.strip().splitlines():
         variant, replacement = line.strip().split("=", 1)
         ADDRESS_SYNONYMS[variant.strip().lower()] = replacement.strip().lower()
 
-
 # Validation and anomaly detection
 def find_invalid_entries(customers_df):
     issues = []
@@ -75,6 +76,14 @@ def find_duplicates(customers_df, field, min_count=2):
     return customers_df[field].value_counts()[
         customers_df[field].value_counts() >= min_count
     ]
+
+# Address normalization
+
+def normalize_address(addr):
+    addr = addr.lower()
+    for variant, replacement in ADDRESS_SYNONYMS.items():
+        addr = addr.replace(variant, replacement)
+    return addr.strip()
 
 # Fraud signal detection
 def scan_for_fraud(customers_df):
@@ -140,8 +149,6 @@ def search_customers(input_value, customers_df, threshold=80, use_fuzzy=True, fi
     return matches
 
 # Streamlit UI
-st.title("🔎 AI Customer Search & Fraud Detection")
-
 customers_df = load_customers("customers.csv")
 fraud_flags = scan_for_fraud(customers_df)
 
