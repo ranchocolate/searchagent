@@ -1,51 +1,51 @@
-customer_id,member_id,full_name,email,phone,address,rma_number,order_number
-1000a,M-91684,Jane Johnson,jane.johnson87@service.net,+17219090699,457 Hill St, London,RMA1049,223487
-1001a,M-78087,Alex Johnson,alex.johnson13@domain.com,+13620102667,205 Hill St, Springfield,RMA1056,251374
-1002a,M-39617,Emily Taylor,emily.taylor28@domain.com,+14002921329,832 Maple Ave, Gotham,RMA1033,948327
-1003a,M-24570,Chris Smith,chris.smith39@testmail.com,+12267269890,861 5th Ave, Metropolis,RMA1063,794312
-1004a,M-17929,Emily Taylor,emily.taylor48@company.org,+15218179250,773 Maple Ave, Metropolis,RMA1014,796814
-1005a,M-73798,Jane Brown,jane.brown35@company.org,+16122894021,499 Oak Rd, Metropolis,RMA1019,262144
-100a6,M-61759,Chris Smith,chris.smith66@service.net,+17598001265,921 Maple Ave, Metropolis,RMA1007,398758
-10a07,M-91254,Alex Smith,alex.smith90@company.org,+15264126048,890 Main St, Metropolis,RMA1044,278342
-100a8,M-44151,Emily Smith,emily.smith40@testmail.com,+15011825774,494 Hill St, London,RMA1024,891202
-100a9,M-81282,Emily Smith,emily.smith51@company.org,+15554373709,132 Main St, Gotham,RMA1026,646113
-101a0,M-71892,Thei43rkmc,jane32@not_an_email,1234,267 Maple Ave, London,RMA1035,689728
-101a1,M-26483,Emily Smith,shared.email@testmail.com,+19998887777,390 5th Ave, Springfield,RMA1001,312738
-101a2,M-90571,Jane Johnson,jane.johnson17@company.org,+17011289243,829 Oak Rd, London,RMA1022,116331
-101a3,M-36867,Jane Taylor,jane.taylor44@testmail.com,+12739551736,880 Oak Rd, Gotham,RMA1024,974812
-101a4,M-31716,Emily Johnson,emily.johnson77@testmail.com,+15223435855,728 Hill St, London,RMA1039,325074
-101a5,M-62714,Chris Brown,chris.brown57@company.org,+18077665346,969 Maple Ave, Gotham,RMA1005,897321
-101a6,M-41260,Emily Johnson,emily.johnson37@testmail.com,+15814502388,122 Maple Ave, Springfield,RMA1071,230596
-101a7,M-63676,Emily Johnson,emily.johnson84@domain.com,+17754883731,934 Maple Ave, Gotham,RMA1054,519309
-101a8,M-22584,Jane Smith,jane.smith84@domain.com,+16389367039,695 5th Ave, Metropolis,RMA1037,352054
-10a19,M-31999,Emily Brown,emily.brown97@testmail.com,+12740246553,240 Hill St, Gotham,RMA1054,186933
-10a20,M-22026,Alex Johnson,alex.johnson65@testmail.com,+14559586783,323 Hill St, London,RMA1085,933405
-10a21,M-36755,Jane Brown,jane.brown91@testmail.com,+1234,740 Hill St, Springfield,RMA1022,412567
-10a22,M-37835,Theindf38rkmc,johnny88@not_an_email,abcd,853 5th Ave, Gotham,RMA1073,194587
-10a23,M-32753,Emily Smith,shared.email@testmail.com,+19998887777,390 5th Ave, Springfield,RMA1074,288701
-10a24,M-72452,Alex Taylor,alex.taylor95@testmail.com,+13487413827,274 5th Ave, Gotham,RMA1016,378431
-10a25,M-80062,Chris Smith,chris.smith30@domain.com,+15980014689,137 5th Ave, Springfield,RMA1001,730210
-10a26,M-46286,Chris Brown,chris.brown33@testmail.com,+14405458273,293 5th Ave, London,RMA1099,249750
-10a27,M-90257,Chris Brown,chris.brown44@testmail.com,+19641721182,682 Hill St, London,RMA1057,737420
-10a28,M-88358,Jane Johnson,jane.johnson15@testmail.com,+19816016377,738 Oak Rd, Metropolis,RMA1063,676960
-10a29,M-77441,Chris Taylor,chris.taylor87@testmail.com,+18083215448,582 5th Ave, Springfield,RMA1003,275721
-10aa30,M-25356,Emily Brown,emily.brown48@company.org,+19071792359,740 Main St, Gotham,RMA1052,897256
-10a31,M-30670,Chris Johnson,chris.johnson69@company.org,+18576074399,329 Oak Rd, Springfield,RMA1091,865932
-10a32,M-38017,Chris Johnson,chris.johnson84@testmail.com,+1234,910 Main St, London,RMA1022,256048
-10a33,M-20329,Theinf38rkmc,spam@fake.email,none,222 5th Ave, Springfield,RMA1047,884013
-1a034,M-86509,Jane Taylor,jane.taylor11@testmail.com,+16764436208,116 Oak Rd, Gotham,RMA1092,107024
-103a5,M-22736,Jane Johnson,shared.email@testmail.com,+19998887777,390 5th Ave, Springfield,RMA1018,634912
-103a6,M-15783,Jane Taylor,jane.taylor41@testmail.com,+14531954471,940 Maple Ave, London,RMA1093,457303
-10a37,M-88845,Emily Johnson,emily.johnson15@company.org,+12668093396,141 Maple Ave, Gotham,RMA1076,292031
-10a38,M-65800,Emily Brown,emily.brown85@service.net,+13882072832,891 Oak Rd, Gotham,RMA1072,777639
-10a39,M-37158,Alex Taylor,alex.taylor66@domain.com,+19762240644,494 5th Ave, Springfield,RMA1074,627052
-1a040,M-94761,Emily Smith,emily.smith12@company.org,+17232801583,657 Oak Rd, London,RMA1045,670509
-1a041,M-13076,Jane Brown,jane.brown14@company.org,+18676771628,655 Maple Ave, London,RMA1017,412307
-1a042,M-34996,Jane Smith,jane.smith11@domain.com,+18202594025,936 5th Ave, Springfield,RMA1041,812487
-1aa043,M-67915,Alex Smith,alex.smith98@testmail.com,+14444731940,179 Main St, Gotham,RMA1089,898412
-1a044,M-99331,Chris Smith,chris.smith71@testmail.com,+16238091270,430 Oak Rd, Gotham,RMA1082,195024
-1a045,M-75833,Emily Brown,emily.brown59@service.net,+14808800386,986 Oak Rd, Springfield,RMA1011,703998
-1a046,M-31980,Jane Johnson,jane.johnson25@testmail.com,+12008653664,308 Oak Rd, Gotham,RMA1027,340528
-1a047,M-48733,Alex Brown,alex.brown39@domain.com,+19414734925,701 Maple Ave, London,RMA1046,905818
-1a048,M-34197,Chris Smith,chris.smith93@domain.com,+17680105978,710 Hill St, Gotham,RMA1059,653178
-10a49,M-66988,Emily Smith,emily.smith38@service.net,+17373102179,397 Maple Ave, Metropolis,RMA1086,489078
+customer_id,full_name,email,phone,address,member_id,rma_number,order_number,notes
+C001,John Smith,john.smith@example.com,+12345678901,123 Fake Street,M1234,RMA001,ORD1001,Normal order
+C002,Jane Doe,jane.doe@example.com,+19876543210,456 Real Avenue,M5678,RMA002,ORD1002,Refund requested
+C003,Bob Johnson,bob.j@example.com,+1112223333,789 Truth Blvd,M1010,RMA003,ORD1003,Chargeback
+C004,Alice Brown,alice.b@example.com,+14151234567,321 Honest Rd,M2323,RMA004,ORD1004,Multiple accounts
+C005,Chris Green,chrisg@example.net,+19998887777,456 Real Avenue,M5678,RMA005,ORD1005,Duplicate phone
+C006,Danny Black,danny.b@example.com,+19873452345,654 Hidden St,M7766,RMA006,ORD1006,Fraudulent return
+C007,Eva White,eva.white@example.com,+12345678999,789 Truth Blvd,M1010,RMA007,ORD1007,Multiple addresses
+C008,Liam Blue,liam.blue@example.org,+1122334455,321 Honest Rd,M2323,RMA008,ORD1008,Same address as Alice
+C009,Sophia Grey,sophia.g@example.net,+1029384756,789 Truth Blvd,M8080,RMA009,ORD1009,Suspicious email
+C010,Noah Green,noah.green@example.org,+1092837465,456 Real Avenue,M9090,RMA010,ORD1010,Refund abuse
+C011,Mia Black,mia.b@example.com,+1010101010,123 Fake Street,M3333,RMA011,ORD1011,Blacklisted address
+C012,Ethan White,ethan.w@example.net,+1111111111,654 Hidden St,M4444,RMA012,ORD1012,Duplicate phone
+C013,Olivia Stone,olivia.s@example.org,+1212121212,321 Honest Rd,M5555,RMA013,ORD1013,Chargeback
+C014,James Red,james.r@example.com,+1313131313,123 Fake Street,M6666,RMA014,ORD1014,Fraud pattern
+C015,Ava Silver,ava.s@example.net,+1414141414,654 Hidden St,M7777,RMA015,ORD1015,Suspicious refund
+C016,Lucas Orange,lucas.o@example.org,+1515151515,456 Real Avenue,M8888,RMA016,ORD1016,Return abuse
+C017,Emily Yellow,emily.y@example.com,+1616161616,123 Fake Street,M9999,RMA017,ORD1017,Blacklisted match
+C018,Mason Cyan,mason.c@example.net,+1717171717,789 Truth Blvd,M0001,RMA018,ORD1018,Fraud link
+C019,Isabella Lime,isabella.l@example.org,+1818181818,321 Honest Rd,M0002,RMA019,ORD1019,Same RMA
+C020,Logan Violet,logan.v@example.com,+1919191919,654 Hidden St,M0003,RMA020,ORD1020,Too many returns
+C021,Grace Pink,grace.p@example.net,+1112223334,456 Real Avenue,M0004,RMA021,ORD1021,Shipping mismatch
+C022,Jayden Gold,jayden.g@example.org,+1122334456,123 Fake Street,M0005,RMA022,ORD1022,Flagged email
+C023,Chloe Indigo,chloe.i@example.com,+1223344556,321 Honest Rd,M0006,RMA023,ORD1023,Same phone as Ethan
+C024,Aiden Plum,aiden.p@example.net,+1324354657,456 Real Avenue,M0007,RMA024,ORD1024,Fraud pattern
+C025,Sofia Teal,sofia.t@example.org,+1425364758,654 Hidden St,M0008,RMA025,ORD1025,RMA repeat
+C026,Ben Azure,ben.a@example.com,+1526374859,123 Fake Street,M0009,RMA026,ORD1026,Chargeback risk
+C027,Emma Coral,emma.c@example.net,+1627384950,789 Truth Blvd,M0010,RMA027,ORD1027,Fraud detected
+C028,Owen Ruby,owen.r@example.org,+1728394051,321 Honest Rd,M0011,RMA028,ORD1028,Shared address
+C029,Amelia Jade,amelia.j@example.com,+1829404152,456 Real Avenue,M0012,RMA029,ORD1029,Duplicate email
+C030,Henry Olive,henry.o@example.net,+1920414253,123 Fake Street,M0013,RMA030,ORD1030,Too frequent returns
+C031,Charlotte Beige,charlotte.b@example.org,+1021424354,654 Hidden St,M0014,RMA031,ORD1031,Known fraud
+C032,William Mint,william.m@example.com,+1122434455,789 Truth Blvd,M0015,RMA032,ORD1032,Fraud pattern
+C033,Harper Peach,harper.p@example.net,+1223444556,321 Honest Rd,M0016,RMA033,ORD1033,Test email
+C034,Daniel Navy,daniel.n@example.org,+1324454657,456 Real Avenue,M0017,RMA034,ORD1034,Abnormal order
+C035,Evelyn Bronze,evelyn.b@example.com,+1425464758,654 Hidden St,M0018,RMA035,ORD1035,Stolen card
+C036,Matthew Maroon,matthew.m@example.net,+1526474859,123 Fake Street,M0019,RMA036,ORD1036,Fraud watchlist
+C037,Abigail Rose,abigail.r@example.org,+1627484950,789 Truth Blvd,M0020,RMA037,ORD1037,Same phone as Jane
+C038,Joseph Sky,joseph.s@example.com,+1728494051,321 Honest Rd,M0021,RMA038,ORD1038,Return fraud
+C039,Ella Sunset,ella.s@example.net,+1829504152,456 Real Avenue,M0022,RMA039,ORD1039,Shared device
+C040,Samuel Pine,samuel.p@example.org,+1930514253,654 Hidden St,M0023,RMA040,ORD1040,Too many complaints
+C041,Lily Ocean,lily.o@example.com,+1031524354,123 Fake Street,M0024,RMA041,ORD1041,Blacklist linked
+C042,David Forest,david.f@example.net,+1132534455,789 Truth Blvd,M0025,RMA042,ORD1042,Frequent returns
+C043,Samantha Snow,samantha.s@example.org,+1233544556,321 Honest Rd,M0026,RMA043,ORD1043,Chargeback alert
+C044,Andrew Storm,andrew.s@example.com,+1334554657,456 Real Avenue,M0027,RMA044,ORD1044,Multiple refunds
+C045,Zoe Flame,zoe.f@example.net,+1435564758,654 Hidden St,M0028,RMA045,ORD1045,Fraud ring
+C046,Nathan Ice,nathan.i@example.org,+1536574859,123 Fake Street,M0029,RMA046,ORD1046,Card abuse
+C047,Lillian Rain,lillian.r@example.com,+1637584950,789 Truth Blvd,M0030,RMA047,ORD1047,Repeat fraud
+C048,Isaac Ember,isaac.e@example.net,+1738594051,321 Honest Rd,M0031,RMA048,ORD1048,Same order pattern
+C049,Victoria Cloud,victoria.c@example.org,+1839604152,456 Real Avenue,M0032,RMA049,ORD1049,Email mismatch
+C050,Elijah Frost,elijah.f@example.com,+1940614253,654 Hidden St,M0033,RMA050,ORD1050,Stolen identity
